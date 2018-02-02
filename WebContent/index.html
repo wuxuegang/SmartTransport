@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>智慧交通监控中心</title>
+        <meta name="description" content="智慧交通监控中心" />
+        <meta name="keywords" content="智慧交通,监控中心" />
+        <meta name="author" content="GAO JIE @ESRI2013" />
+        <link rel="shortcut icon" href="images/favicons.ico">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <link rel="stylesheet" type="text/css" href="css/nv.d3.css"/>
+        <link rel="stylesheet" type="text/css" href="css/screen.css"/>
+        <link rel="stylesheet" type="text/css" href="css/perfect-scrollbar-0.4.6.min.css"/>
+        <link rel="stylesheet" type="text/css" href="http://gaojie/js/3.6/js/esri/css/esri.css" />
+        <script src="js/modernizr.custom.js"></script>
+        <script src="js/plugins/jquery-1.7.2.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="js/plugins/jquery.knob.js"></script>
+        <script type="text/javascript" src="js/plugins/perfect-scrollbar-0.4.6.with-mousewheel.min.js"></script>
+        <script type="text/javascript" src="js/plugins/swfobject.js"></script>
+        <script src="js/classie.js"></script>
+        <script src="js/gnmenu.js"></script>
+        <script type="text/javascript" src="config/config.js"></script>
+        <script type="text/javascript" src="js/application/djConfig.js"></script>
+        <script type="text/javascript" src="http://gaojie/js/3.6"></script>
+        
+        <script type="text/javascript">
+            require(["application/main", "dojo/domReady!"], function(application, domReady) {
+                window.app = new application(configOptions);
+            });
+        </script>
+    </head>
+    <body>
+        <header id="header" class="z-max">
+            <ul id="gn-menu-banner" class="gn-menu-banner z-max">
+                <li><a class="codrops-icon codrops-icon-logo1" href="index.html">智慧交通监控中心</a></li>
+            </ul>
+            <ul id="gn-menu" class="gn-menu-main z-max"></ul>
+        </header>
+        <div id="mainContent" class="container Loading">
+            <div class="width_3_quarter" id="mapcon">
+                <div id="map" dir="ltr">
+                	<div id="static-infowindow"></div>
+                </div>  
+            </div>
+            <div id="knobTotal" class="width_quarter"></div>
+            <div id="chartIndexTotal" class="width_quarter"></div>
+            <div class="clear"></div>
+            <div id="detailCharts" class="width_full"></div>
+            <div id="weiboContainer"  style="display:none;">
+				<div style="width: 600px; margin: auto;"> 
+					<h1>微博分享设置</h1>
+					<h3>请选择欲发布微博的内容：</h3>
+					<div class="chckbox"><input type="checkbox" checked="true" name="weiboCheckBox" class="weiboArgs" > 交通指数 </div> 
+					<div class="chckbox"><input type="checkbox" checked="true" name="weiboCheckBox"  class="weiboArgs" > 拥堵等级 </div> 
+					<div class="chckbox"><input type="checkbox" checked="true" name="weiboCheckBox"  class="weiboArgs" > 平均速度 </div> 
+					<div class="chckbox"><input type="checkbox" checked="true" name="weiboCheckBox"  class="weiboArgs" > 全路网总体运行状态 </div> 
+					
+					<FIELDSET align='center' style='width: 98%;'>
+						<LEGEND style='font-weight: bold;' onselectstart="return false;">微博预览</LEGEND>  
+						<textarea class="WB_textarea" id="weiboPublisher" node-type="editor" style="border-color: #99C9FF;border-style: solid;border-width: 0.8px;font-family: Tahoma,宋体;font-size:14px;line-height:18px;margin:0;outline:medium none;overflow-x: hidden;overflow-y: auto;padding: 10px;word-wrap: break-word;" >智慧交通监控中心 - 当前XX市全路网交通指数:4.6， 拥堵等级：4.6， 平均速度26.4km/h，全路网总体运行状态: 轻度拥堵, 发布时间：2013/12/11 15:23:26  </textarea>
+						<a href="javascript:void(0);" class="element_share">
+							<span class="img_master"><span class="img_hold"><img src="http://localhost:8080/ITSystem/images/erweima.png"></span></span><em class="WB_check_icon"></em>
+						</a>
+						</fieldset>  
+					 <div class="btn-add"> 
+			 		       <div class="clear-btn" style="height:38px;line-height:38px;" id="save" >保存</div> 
+		 				   <div class="clear-btn" style="height:38px;line-height:38px;" id ="cancer" >取消</div> 
+					 </div>  
+			 	</div>
+			</div>
+        </div><!-- /container -->
+    <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#uuid=<你的UUID>&style=-1"></script>
+	<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC3.js"></script>
+    </body>
+</html>

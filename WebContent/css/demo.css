@@ -1,0 +1,172 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@font-face {
+	font-family: 'codropsicons';
+	src:url('../fonts/codropsicons/codropsicons.eot');
+	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html, body {
+    width: 100%;
+}
+
+header#header{
+    height:160px;
+}
+
+body {
+	background: white;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: bold;
+    font-family: 'Lato', Arial, sans-serif;
+    color: #5f6f81;
+}
+
+p {
+    font-weight: 100;
+    font-family: 'Lato', Arial, sans-serif;
+    color: #5f6f81;
+    font-size: 10px;
+}
+
+.clear {
+clear: both;
+}
+
+.spacer {
+height: 20px;
+}
+
+#mainContent .container{
+    height:100%;
+    z-index: 0;
+}
+
+.Loading{
+	background: url(../images/ajax-loader.gif?v=3.01) no-repeat center center;
+    z-index: 999999999;
+}
+
+
+/* To Navigation Style */
+.codrops-top {
+	background: #fff;
+	background: rgba(255, 255, 255, 0.6);
+	text-transform: uppercase;
+	width: 100%;
+	font-size: 0.69em;
+	line-height: 2.2;
+}
+
+.codrops-top a {
+	text-decoration: none;
+	padding: 0 1em;
+	letter-spacing: 0.1em;
+	color: #888;
+	display: inline-block;
+}
+
+.codrops-top a:hover {
+	background: rgba(255,255,255,0.95);
+	color: #333;
+}
+
+.codrops-top span.right {
+	float: right;
+}
+
+.codrops-top span.right a {
+	float: left;
+	display: block;
+}
+
+.codrops-icon:before {
+	font-family: 'codropsicons';
+	margin: 0 4px;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+.codrops-icon-logo:before {
+	content: "\e001";
+}
+
+.codrops-icon-esri1:before {
+	content: "\e002";
+	font-size: 2em;
+}
+
+.codrops-icon-esri2:before {
+    content: "\e003";
+}
+
+.codrops-icon-esri3:before {
+    content: "\e004";
+}
+
+.codrops-icon-logout:before {
+    content: "\e005";
+}
+
+.codrops-icon-down:before {
+    content: "\f48b";
+    color: #009EDE;
+}
+
+.codrops-icon-logo1:before {
+    content: "\f227";
+    color: #E77826;
+    font-size: 1.4em;
+}
+
+/* Demo Buttons Style */
+.codrops-demos {
+	padding-top: 1em;
+	font-size: 0.9em;
+}
+
+.codrops-demos a {
+	text-decoration: none;
+	outline: none;
+	display: inline-block;
+	margin: 0.5em;
+	padding: 0.7em 1.1em;
+	border: 3px solid #b1aea6;
+	color: #b1aea6;
+	font-weight: 700;
+}
+
+.codrops-demos a:hover,
+.codrops-demos a.current-demo,
+.codrops-demos a.current-demo:hover {
+	border-color: #89867e;
+	color: #89867e;
+}
+
+@media screen and (max-width: 1025px) {
+	.container > header {
+		margin: 0 auto;
+		padding: 120px 50px;
+		font-size: 70%;
+		text-align: right;
+	}
+}
+
+@media screen and (max-width: 740px) {
+
+	.codrops-icon span {
+		display: none;
+	}
+
+}
